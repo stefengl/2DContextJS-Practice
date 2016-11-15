@@ -1,0 +1,105 @@
+@import "./animations.css";
+
+*::not(.snowflakes){
+    animation: fadein 1.5s ease;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    width: 100vw;
+    height: 100vh;
+    background: white; 
+    font-family: 'tangerine', cursive;
+}
+
+#content #logo{
+    width:200px;
+    height:60px;
+    position: relative;
+    top:15vh;
+    left:calc(50% - 100px);
+}
+
+#canvas{
+    width:70%;
+    height:60%;
+    position: relative;
+    top:20%;
+    left:15%;
+    background: white
+}
+
+#canvas #treeWrapper{
+    
+}
+
+.flakeWrapper{
+    width:30%;
+    position: relative;
+    top:0;
+    text-align: center;
+}
+
+#left{
+    float:left;
+}
+
+#right{
+    float:right;
+}
+
+.snowflakes{
+    width:10%;
+    height:5%;
+    position: relative;
+    top: 0;
+}
+
+#left #sf1, #right #sf5{
+    animation: 
+    flakeFade  4s ease-in infinite, 
+    fall 4s ease-in infinite,
+    shake 3s ease-in infinite,
+     rotato 4s ease-in infinite;
+
+}
+
+#left #sf2 , #right #sf3{
+    animation: 
+    flakeFade 5s ease-in infinite, 
+    fall 5s ease-in infinite,
+        shake 3s ease-in infinite,
+        rotato 5s ease-in infinite;
+
+
+}
+
+#left #sf3, #right #sf2{
+    animation: 
+    flakeFade 3s ease-in infinite, 
+    fall 3s ease-in infinite,
+            shake 3s ease-in infinite,
+        rotato 3s ease-in infinite;
+
+}
+
+#left #sf4, #right #sf1{
+    animation: 
+    flakeFade 4.5s ease-in infinite, 
+    fall 4.5s ease-in infinite,
+                shake 3s ease-in infinite,
+        rotato 4.5s ease-in infinite;
+
+}
+
+#left #sf5 , #right #sf4{
+    animation: 
+    flakeFade 3.5s ease-in infinite, 
+    fall 3.5s ease-in infinite,
+                shake 3s ease-in infinite,
+        rotato 3.5s ease-in infinite;
+}
