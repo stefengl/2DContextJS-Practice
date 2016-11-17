@@ -1,6 +1,6 @@
 @import "./animations.css";
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -10,22 +10,45 @@ html, body {
     height: 100vh;
     position: relative;
 }
-    #content #logo {
-        width: 200px;
-        height: 65px;
-        position: relative;
-        top: 15vh;
-        left: calc(50% - 100px);
-    }
 
-     #content #ribbon {
-        width: 15%;
-        height: 20%;
-        position: absolute;
-        top: 0;
-        right:0;
-        opacity: 0.8;
-    }
+#closingArea {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    background: transparent;
+    width: 10%;
+}
+
+#closingArea #closingBtn {
+    border: none;
+    width: 20%;
+    float: left;
+    transition: 1s ease;
+    filter: grayscale(100%)
+}
+
+#closingArea #timerLabel {
+    float: left;
+    position: relative;
+    top: 1vh;
+}
+
+#content #logo {
+    width: 200px;
+    height: 65px;
+    position: relative;
+    top: 15vh;
+    left: calc(50% - 100px);
+}
+
+#content #ribbon {
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+}
 
 #canvas {
     width: 70%;
@@ -40,99 +63,94 @@ html, body {
     width: 100%;
     position: relative;
     text-align: center;
-    background:transparent;
+    background: transparent;
 }
 
-    .snowflakes {
-        width: 3%;
-        position: relative;
-        margin: 0 0.5%;
-    }
-    
-    .snowflakes.zGroup1{
-        z-index: 1;
-    }
+.snowflakes {
+    width: 3%;
+    position: relative;
+    margin: 0 0.5%;
+}
 
-    .snowflakes.zGroup2{
-        z-index: 5;
-    }
+.snowflakes.zGroup1 {
+    z-index: 1;
+}
 
+.snowflakes.zGroup2 {
+    z-index: 5;
+}
 
 #treeWrapper {
     width: 40%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 30%;
-    z-index:3;
+    z-index: 3;
     text-align: center;
     font-family: 'tangerine', cursive;
 }
 
-    #treeWrapper #tree{
-        width: 70%;
-        height: 70%;
-        margin-top: 25%;
-    }
+#treeWrapper #tree {
+    width: 70%;
+    height: 70%;
+    margin-top: 25%;
+}
 
-    #treeWrapper #messageBoard {
-        position: relative;
-        top: 5%;
-        box-shadow: 0 3px 6px black;
-        padding: 2.5%;
-    }
+#treeWrapper #messageBoard {
+    position: relative;
+    top: 5%;
+    box-shadow: 0 3px 6px black;
+    padding: 2.5%;
+}
 
-    #treeWrapper h1{
-        margin: 0;
-        color: darkred;
-        font-size: 3.0em;
-    }
+#treeWrapper h1 {
+    margin: 0;
+    color: darkred;
+    font-size: 3.0em;
+}
 
-    #treeWrapper h2{
-        margin:0;
-        color: darkgreen;
-        font-size: 2em;
-        display: inline-block
-    }
+#treeWrapper h2 {
+    margin: 0;
+    color: darkgreen;
+    font-size: 2em;
+    display: inline-block
+}
 
+#sf1,
+#sf15,
+#sf8,
+#sf18 {
+    animation: flakeFade 5s ease-in infinite, fall 5s ease-in infinite, move 4s ease-in infinite, rotato 4s ease-in infinite;
+}
 
-    #sf1,#sf15,#sf8,#sf18  {
-        animation: flakeFade 5s ease-in infinite,
-        fall 5s ease-in infinite,
-        move 4s ease-in infinite,
-        rotato 4s ease-in infinite;
-    }
+#sf2,
+#sf13,
+#sf10,
+#sf16 {
+    animation: flakeFade 7s ease-in-out infinite, fall 7s ease-in-out infinite, move 4s ease-in infinite, rotato 5s ease-in-out infinite;
+}
 
-    #sf2,#sf13,#sf10,#sf16  {
-        animation: flakeFade 7s  ease-in-out infinite, 
-        fall 7s  ease-in-out infinite, 
-        move 4s ease-in infinite,
-        rotato 5s  ease-in-out infinite;
-    }
+#sf3,
+#sf12,
+#sf7,
+#sf19 {
+    animation: flakeFade 4.2s ease-in infinite, fall 4.2s ease-in infinite, move-other 4s ease-in infinite, rotato 3s ease-in infinite;
+}
 
-    #sf3,#sf12,#sf7,#sf19
-   {
-        animation: flakeFade 4.2s ease-in infinite, 
-        fall 4.2s ease-in infinite,
-        move-other 4s ease-in infinite,  
-        rotato 3s ease-in infinite;
-    }
+#sf4,
+#sf11,
+#sf17,
+#sf6 {
+    animation: flakeFade 5.8s ease-in infinite, fall 5.8s ease-in infinite, move 4s ease-in infinite, rotato 4.5s ease-in infinite;
+}
 
-    #sf4,#sf11,#sf17,#sf6
-   {
-        animation: flakeFade 5.8s ease-in infinite, 
-        fall 5.8s ease-in infinite,
-        move 4s ease-in infinite, 
-        rotato 4.5s ease-in infinite;
-    }
-
-    #sf5,#sf14,#sf9,#sf20{
-        animation: flakeFade 8.7s ease-in-out infinite, 
-        fall 8.7s ease-in-out infinite,
-        move-other 4s ease-in infinite,  
-        rotato 3.5s ease-in-out infinite;
-    }
-
+#sf5,
+#sf14,
+#sf9,
+#sf20 {
+    animation: flakeFade 8.7s ease-in-out infinite, fall 8.7s ease-in-out infinite, move-other 4s ease-in infinite, rotato 3.5s ease-in-out infinite;
+}
 
 *:not(#ribbon):not(.snowflakes) {
     animation: fadein 3s ease;

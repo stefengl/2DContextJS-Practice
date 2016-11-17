@@ -27,12 +27,34 @@ html, body {
         opacity: 0.8;
     }
 
+    #closingArea {
+        position: absolute;
+        top: 1%;
+        left: 0;
+        background: transparent;
+        width: 10%;
+    }
+
+        #closingArea #closingBtn {
+            border: none;
+            width: 20%;
+            float: left;
+            transition: 1s ease;
+            filter: grayscale(100%)
+        }
+
+        #closingArea #timerLabel {
+            float: left;
+            position: relative;
+            top: 1vh;
+        }
+
 #canvas {
-    width: 60%;
+    width: 70%;
     height: 50%;
     position: relative;
     top: 20%;
-    left: 20%;
+    left: 15%;
     background: white;
 }
 
@@ -70,14 +92,14 @@ html, body {
 }
 
     #treeWrapper #tree{
-        width: 70%;
-        height: 70%;
+        width: 55%;
+        height: 75%;
         margin-top: 25%;
     }
 
     #treeWrapper #messageBoard {
         position: relative;
-        top: 10%;
+        top: 5%;
         box-shadow: 0 3px 6px black;
         padding: 2.5%;
     }

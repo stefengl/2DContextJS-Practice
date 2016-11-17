@@ -27,6 +27,30 @@ html, body {
         opacity: 0.8;
     }
 
+    #closingArea {
+        position: absolute;
+        top: 1%;
+        left: 0;
+        background: transparent;
+        width: 25%;
+    }
+
+        #closingArea #closingBtn {
+            border: none;
+            width: 20%;
+            float: left;
+            transition: 1s ease;
+            filter: grayscale(100%)
+        }
+
+        #closingArea #timerLabel {
+            float: left;
+            position: relative;
+            font-size: 60%;
+            top: 1vh;
+        }
+
+
 #canvas {
     width: 100%;
     height: 50%;
