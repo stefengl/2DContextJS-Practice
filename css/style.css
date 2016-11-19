@@ -25,31 +25,16 @@ html, body {
         top: 0;
         right: 0;
         opacity: 0.8;
-    }
+}
 
-    #closingArea {
-        position: absolute;
-        top: 1%;
-        left: 0;
-        background: transparent;
-        width: 25%;
-    }
-
-        #closingArea #closingBtn {
-            border: none;
-            width: 20%;
-            float: left;
-            transition: 1s ease;
-            filter: grayscale(100%)
-        }
-
-        #closingArea #timerLabel {
-            float: left;
-            position: relative;
-            font-size: 60%;
-            top: 1vh;
-        }
-
+#closingBtn {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 7%;
+    margin: 1%;
+    border: none;
+}
 
 #canvas {
     width: 100%;
@@ -105,6 +90,12 @@ html, body {
         left: -12.5%;
         box-shadow: 0 3px 6px black;
         padding: 2.5%;
+        transition: 1.5s ease-out;
+    }
+
+    #messageBoard:hover {
+        transform: scale(1.1) ;
+        box-shadow: 0 5px 8px black;
     }
 
     #treeWrapper h1{
